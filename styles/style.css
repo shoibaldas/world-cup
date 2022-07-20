@@ -23,7 +23,8 @@ main {
 }
 
 .cover-title-info {
-    margin-left: 50px;
+    margin-left: 30px;
+    width: 50%;
 }
 
 .cover-container h1 {
@@ -31,7 +32,7 @@ main {
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
-    line-height: 70px;
+    line-height: 60px;
     color: #FFFFFF;
 }
 
@@ -42,6 +43,7 @@ main {
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
+    /* text-align: justify; */
 }
 
 .cover-container a {
@@ -66,8 +68,9 @@ main {
 }
 
 .cover-container img {
-    width: 538px;
-    height: 570px;
+    width: 95%;
+    /* width: 581px;
+    height: 613px; */
     margin-left: 30px;
 }
 
@@ -295,22 +298,21 @@ footer hr {
 
 @media only screen and (min-width=688px) and (max-width=992px) {
 
-    .cover-container {
+    /* .cover-container {
         margin-top: 50px;
-        width: 600px;
-        background: #161616;
+        width: 500px;
+        background: red;
         border-radius: 30px;
         display: flex;
         align-items: center;
-        /* padding: 58px 50px 0px; */
     }
 
-    /* .cover-container h1 {
+    .cover-container h1 {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 70px;
+        font-size: 25px;
+        line-height: 5px;
         color: #FFFFFF;
     }
 
@@ -335,9 +337,51 @@ footer hr {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 26px;
         color: #FFFFFF;
-    }  */
+    } */
 
+    /* footer {
+        width: 100%;
+    } */
+}
+
+@media only screen and (max-width: 688px) {
+
+    .cover-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover-title-info {
+        margin: auto;
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .cover-container h1 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .cover-container p {
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .cover-container a {
+        width: 161px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
 }
