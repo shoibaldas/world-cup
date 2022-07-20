@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Common Styles */
+body {
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* Cover Styles */
+.cover-container {
+    margin-top: 50px;
+    width: 1050px;
+    /* height: 560px; */
+    background: #161616;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 33px 50px 0px;
+}
+
+.cover-title-info {
+    margin-left: 50px;
+}
+
+.cover-container h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.cover-container p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.cover-container a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 187px;
+    height: 56px;
+    background: #DD0000;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-icon {
+    margin-left: 10px;
+}
+
+.cover-container img {
+    width: 538px;
+    height: 570px;
+    margin-left: 30px;
+}
+
+/*------------------
+     Blog styl
+------------------------------*/
+.blog-container {
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
+
+.blogs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.menu-container {
+    width: 270px;
+    height: 245px;
+    background: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 205px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #161616;
+}
+
+.menu-btn.special-btn {
+    color: #FFFFFF;
+    background: #DD0000;
+}
+
+.match-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.thumbnail {
+    width: 270px;
+    height: 245px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.thumbnail img {
+    width: 93.04px;
+    height: 56.18px;
+}
+
+.vsflag {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.match-section h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.match-section h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.match-info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
+
+/* ----------------
+    footer style 
+--------------------------*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: #161616;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-title {
+    margin-top: 70px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+footer hr {
+    width: 90%;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-menu {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0px 200px;
+}
+
+.footer-menu-name {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #B9B9B9;
+}
+
+.social-icon {
+    margin-top: 50px;
+    font-size: 25px;
+    color: violet;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
