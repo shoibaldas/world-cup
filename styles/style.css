@@ -16,11 +16,12 @@ main {
     align-items: center;
 }
 
+
 /* -----------------------
         Cover Styles 
 -------------------------- */
 .cover-container {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 78%;
     background: #161616;
     border-radius: 30px;
@@ -222,6 +223,25 @@ main {
     color: #4D4D4D;
 }
 
+.view-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 131px;
+    height: 47px;
+    background: #DD0000;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-btn {
+    visibility: hidden;
+}
+
 /* ------------------------
         footer style 
 --------------------------*/
@@ -266,11 +286,22 @@ footer hr {
 .social-icon {
     margin-top: 50px;
     font-size: 25px;
-    color: violet;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     margin-bottom: 50px;
+}
+
+.fa-facebook,
+.fa-linkedin,
+.fa-github {
+    color: #FFFFFF;
+}
+
+.fa-facebook:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
+    color: cyan;
 }
 
 /*--------------------------------------
@@ -326,7 +357,7 @@ footer hr {
 --------------------------------------------------------*/
     .blog-container {
         margin-top: 50px;
-        margin-bottom: 130px;
+        margin-bottom: 50px;
     }
 
     .blogs {
@@ -353,6 +384,11 @@ footer hr {
     .match-section {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
+    }
+
+    .view-btn {
+        margin-bottom: 50px;
+        visibility: visible;
     }
 
     /*---------------------------------------
@@ -429,6 +465,8 @@ footer hr {
     .blog-container {
         margin-top: 50px;
         margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
     }
 
     .blogs,
