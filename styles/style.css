@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
-/* Common Styles */
+/*-------------------------
+        Common Styles
+---------------------------*/
 body {
     font-family: 'Poppins';
     font-style: normal;
@@ -14,7 +16,9 @@ main {
     align-items: center;
 }
 
-/* Cover Styles */
+/* -----------------------
+        Cover Styles 
+-------------------------- */
 .cover-container {
     margin-top: 50px;
     width: 78%;
@@ -32,8 +36,6 @@ main {
 }
 
 .cover-container h1 {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 60px;
@@ -41,13 +43,10 @@ main {
 }
 
 .cover-container p {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
-    /* text-align: justify; */
 }
 
 .cover-container a {
@@ -71,14 +70,12 @@ main {
 
 .cover-container img {
     width: 95%;
-    /* width: 581px;
-    height: 613px; */
     margin-left: 30px;
     margin-bottom: -7px;
 }
 
 /*------------------------------
-         Blog style
+          Blog style
 ---------------------------------*/
 .blog-container {
     margin-top: 100px;
@@ -225,8 +222,8 @@ main {
     color: #4D4D4D;
 }
 
-/* ----------------
-    footer style 
+/* ------------------------
+        footer style 
 --------------------------*/
 
 footer {
@@ -262,7 +259,7 @@ footer hr {
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
-    /* line-height: 24px; */
+    line-height: 24px;
     color: #B9B9B9;
 }
 
@@ -276,30 +273,119 @@ footer hr {
     margin-bottom: 50px;
 }
 
-/*-------------------------------
-    Responsive-Section
+/*--------------------------------------
+        Responsive-Section
 ---------------------------------------- */
 
-/*---------------
-    Tablet-Section
- --------------*/
+/*----------------------------
+        Tablet-Section
+ ----------------------------*/
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
 
     .cover-container {
-        background-color: red;
+        margin-top: 30px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 33px 50px 0px;
     }
+
+    .cover-title-info {
+        margin-left: 30px;
+        width: 50%;
+    }
+
+
+    .cover-container h1 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .cover-container p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .cover-container a {
+        width: 161px;
+        height: 40px;
+    }
+
+    .cover-container img {
+        width: 95%;
+        margin-left: 30px;
+    }
+
+    /*-------------------------------------------------------
+        Blog style & UpMatch Single Column Display
+--------------------------------------------------------*/
+    .blog-container {
+        margin-top: 50px;
+        margin-bottom: 130px;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container {
+        width: 80%;
+        height: 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        background: none;
+        margin-bottom: 20px;
+    }
+
+    .menu-btn {
+        border: 1px solid gray;
+    }
+
+    .transfer-section,
+    .match-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+
+    /*---------------------------------------
+                 footer style 
+    -----------------------------------------*/
+    .footer-menu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .social-icon {
+        gap: 30px;
+    }
+
 }
+
+/*----------------------------
+        Mobile-Section
+ ----------------------------*/
 
 @media only screen and (max-width: 688px) {
 
     /*------------------------------
-                     Cover style
-            ---------------------------------*/
+            Cover style
+    ---------------------------------*/
 
     .cover-container {
         margin-top: 20px;
-        width: 50%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -333,14 +419,20 @@ footer hr {
 
     .cover-container img {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
 
     }
 
-    /*------------------------------
-             Blog style
-    ---------------------------------*/
-    .blogs {
+    /*-------------------------------------------------------
+             Blog style & UpMatch Single Column Display
+    --------------------------------------------------------*/
+    .blog-container {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .blogs,
+    .match-section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -359,9 +451,9 @@ footer hr {
         grid-column-gap: 16px;
     }
 
-    /* ----------------
-        footer style 
-    --------------------------*/
+    /*---------------------------------------
+                footer style 
+    -----------------------------------------*/
     .footer-menu {
         margin-top: 20px;
         padding: 0;
