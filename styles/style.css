@@ -16,6 +16,39 @@ main {
     align-items: center;
 }
 
+/*--------------------
+        Animation
+----------------------------*/
+
+@keyframes sliding {
+    0% {
+        transform: rotate(180deg);
+        top: 100%
+    }
+
+    50% {
+        transform: rotate(360deg);
+        top: 30%;
+    }
+
+    100% {
+        transform: rotate(540deg);
+        top: 100%
+    }
+}
+
+.ball {
+    display: none;
+}
+
+.cover-container:hover .ball {
+    height: 65px;
+    height: 65px;
+    display: flex;
+    position: relative;
+    animation: sliding 3s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
 
 /* -----------------------
         Cover Styles 
